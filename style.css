@@ -1,31 +1,43 @@
 * {
-    box-sizing: border-box;
     background-color: black;
     color: white;
+    box-sizing: border-box;
+    display: 95%;
+    
     
 }
 
 h1{
     border: 20px groove grey;
-    padding: 20px;
-    margin: 20px;
+    padding: 10px;
+    margin: 
     background-color: black;
+    font-size: 2rem;
+    
 }
 
 h2{
-    background-color: black
+    background-color: black;
+    font-weight: bold;
 }
 
 section{
     border: 20px ridge gray;
+    border-radius: 12px;
     padding: 20px;
-    margin: 20px;
+    margin: 5rem auto 0 auto;
     background-color: black;
+    width: 80%;
+    height: 40rem;
+    position: static;
 }
 
 p{
     background-color: black;
+    width: auto;
 }
+
+
 
 ul{
     background-color: black
@@ -34,3 +46,4 @@ ul{
 li{
     background-color: black
 }
+

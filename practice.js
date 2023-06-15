@@ -85,3 +85,76 @@ if (guess <){
     }
 }
 }
+
+
+
+
+
+//const number ="7";
+const numer = Math.floor(Math.random() *10+1);
+for (let i = 2; i >= 0; 1--){
+
+    let guesses = 1 + 1;
+    let guess = prompt("guess a number between 1 - 10! You have" + guesses + " left");
+
+    const guessNum = parseFloat(guess);
+
+    if (guess === number){
+        console.log("you win");
+        alert("You win.");
+        break;
+    }else if (guessNum < number){
+        console.log("to low");
+        alert("To low.");
+        else if (guessNum > number){
+            console.log("to high")
+            alert("To high.");
+        }
+    }
+
+    if(i=== 0){
+        alert("the correct number was 3");
+        break;
+    }
+}
+
+function sayHello(){
+    console.log("Hello");
+    }
+
+       sayHello();
+
+       function SayGoodbye(name){
+           console.log("Good Bye" + name +".");
+       }
+
+       SayGoodbye("neo");
+
+       function getFullName(firstName, secondname){
+           return firstName + " "+ secondname
+       }
+
+       let ada = getFullName( "ada", "lovelace");
+       console.log("ada" + ada);
+
+       function yesOrNoPrompt(promptInfo){
+           let userInput= (promptInfo);
+           if (userInput === "yes"){
+               console.log("hurray");
+           }else if (userInput === "no"){
+               console.log("nope");
+           }else if (userInput === "maybe"){
+               console.log("make upo your mind.");
+           }else{
+               console.log("error!!");
+           }
+       }
+
+       yesOrNoPrompt("Well yes or no");
+       yesOrNoPrompt("how about yes or no");
+
+       const myName = function(name){
+           console.log(name);
+       }
+       
+       myName();

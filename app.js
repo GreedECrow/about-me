@@ -38,9 +38,11 @@ while (answer1 != "yes" && answer1 != "y" && answer1 != "no" && answer1 != "n") 
 if (answer1 === "yes" || answer1 === "y"){
     console.log("Correct!");
     alert("Correct!!");
-}else (answer1 === "no" || answer1 === "n") ;
+
+}else{
     console.log("Nope, try again.");
     alert("Nope, try again.");
+}
 }
 question1()
 
@@ -58,7 +60,8 @@ function question2(){
     if (answer2 === "yes" || answer2 === "y"){
         console.log("SHA-BOOM-BOOM!");
         alert("SHA-BOOM-BOOM!");
-    }else (answer2 === "no" || answer2 === "n");
+
+    }else if(answer2 === "no" || answer2 === "n");
         console.log("Nope, missed out on a point.");
         alert("Nope, missed out on a point.");
 
@@ -79,7 +82,8 @@ function question2(){
         if (answer3 === "yes" || answer3 === "y"){
             console.log("Incorrect!!");
             alert("Incorrect!!");
-        }else  (answer3 === "No" || answer3 === "n");
+
+        }else if(answer3 === "No" || answer3 === "n");
             console.log("Correct, it was my third job!!.");
             alert("Correct, it was my third job!!.");
         }
@@ -99,7 +103,7 @@ function question2(){
                 console.log("Nope, although I wouldn't have turned it down");
                 alert("Nope, although I wouldn't have turned it down");
 
-            }else (answer4 === "no" || answer4 === "n");
+            }else if(answer4 === "no" || answer4 === "n");
                 console.log("That's right, roof top all the way for this gargoyle.");
                 alert("That's right, roof top all the way for this gargoyle.");
             }
@@ -119,7 +123,7 @@ function question2(){
                     console.log("Or course it is!");
                     alert("of course it is!");
 
-                }else (answer5 === "no" || answer5 === "n");
+                }else if(answer5 === "no" || answer5 === "n");
                     console.log("Nope.");
                     alert("Nope.");
                 }
@@ -128,49 +132,36 @@ function question2(){
 
 
                 function question6(){
+     
+                const number = Math.floor(Math.random() *10+1);
+for (let i = 2; i >= 0; i--){
 
-                   guess = 0;
-                   maxGuess = 4;
-                   fingers = (4);
+    let guesses = 1 + 1;
+    let guess = prompt("guess a number between 1 - 10! You have" + guesses + " left");
 
-                     
-                     answer6 = prompt(user = ", How many fingers am I holding up?");
+    const guessNum = parseFloat(guess);
 
-                     while (answer6 != fingers){
+    if (guess === number){
+        console.log("you win");
+        alert("You win.");
+        break;
 
-                    if (answer6 = fingers){
-                        console.log("Correct!!");
-                        alert("Correct!!");
-                    } else if (answer6 < fingers){
-                    console.log("Nearly" + user + ", try a little higher.");
-                    } else if (answer6 > fingers){
-                        console.log("A bit too high" + user + ", try again.")
-                        alert("A bit too high" + user + ", try again.")
-                    } else if (answer6 > 5){
-                        console.log("That was a waste of a guess.");
-                        alert("That was a waste of a guess.");
-                    }else{
-                        console.log("Never mind, it was a good effort. On to question 7.");
-                        alert("Never mind, it was a good effort. On to question 7.");
-                    }
-                    }
-                }
-                
-                question6();
+    }else if (guessNum < number){
+        console.log("to low");
+        alert("To low.");
+    }else if (guessNum > number){
+            console.log("to high")
+            alert("To high.");
+        }
+    
 
+    if(i=== 0){
+        alert("the correct number was 3");
+        break;
+    }
+}
+}
 
-                //function guessNumber() {
-                   
-                 // while (numbGuess != secretNumber) {
-                  //  if (numbGuess < secretNumber) {
-                   //     alert("Too low, try again!")
-                   //     guessNumber()
-                  //  } else {
-                   //     alert("Too high, try again!")
-                    //    guessNumber()
-                  //  };
-                //  }
-               //   alert("You guessed my age!");
-              //  }
-                  
-             //   guessNumber(){}
+question6()
+
+const topTen = ["Final Fantasy 7", "Final Fantasy 14", "The Witcher 3", "Horizen: Zero Dawn and Forbbiden West", "Pretty much anything Wizards of the Coast related", "Pretty much anything World of Darkness related", "Comics", "Fantasy/Science fiction", "Drawing", "Heavy metal"];
