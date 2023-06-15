@@ -7,10 +7,12 @@ let answer4;
 let answer5;
 let answer6;
 let answer7;
-let fingers;
+let guesses;
 let guess;
 let maxGuess;
-let points
+let points =0;
+let guessed =0;
+let attempts= 0;
 
 alert("QUIZZ TIME!!");{
     console.log("quizz time");
@@ -61,7 +63,7 @@ function question2(){
         console.log("SHA-BOOM-BOOM!");
         alert("SHA-BOOM-BOOM!");
 
-    }else if(answer2 === "no" || answer2 === "n");
+    }else 
         console.log("Nope, missed out on a point.");
         alert("Nope, missed out on a point.");
 
@@ -83,7 +85,7 @@ function question2(){
             console.log("Incorrect!!");
             alert("Incorrect!!");
 
-        }else if(answer3 === "No" || answer3 === "n");
+        }else 
             console.log("Correct, it was my third job!!.");
             alert("Correct, it was my third job!!.");
         }
@@ -103,7 +105,7 @@ function question2(){
                 console.log("Nope, although I wouldn't have turned it down");
                 alert("Nope, although I wouldn't have turned it down");
 
-            }else if(answer4 === "no" || answer4 === "n");
+            }else 
                 console.log("That's right, roof top all the way for this gargoyle.");
                 alert("That's right, roof top all the way for this gargoyle.");
             }
@@ -123,7 +125,7 @@ function question2(){
                     console.log("Or course it is!");
                     alert("of course it is!");
 
-                }else if(answer5 === "no" || answer5 === "n");
+                }else
                     console.log("Nope.");
                     alert("Nope.");
                 }
@@ -131,10 +133,10 @@ function question2(){
 
 
 
-                function question6(){
+function question6(){
      
                 const number = Math.floor(Math.random() *10+1);
-for (let i = 2; i >= 0; i--){
+for (let i = 3; i >= 0; i--){
 
     let guesses = 1 + 1;
     let guess = prompt("guess a number between 1 - 10! You have" + guesses + " left");
@@ -156,7 +158,7 @@ for (let i = 2; i >= 0; i--){
     
 
     if(i=== 0){
-        alert("the correct number was 3");
+        alert("the correct number was " + number + ".");
         break;
     }
 }
@@ -164,4 +166,31 @@ for (let i = 2; i >= 0; i--){
 
 question6()
 
-const topTen = ["Final Fantasy 7", "Final Fantasy 14", "The Witcher 3", "Horizen: Zero Dawn and Forbbiden West", "Pretty much anything Wizards of the Coast related", "Pretty much anything World of Darkness related", "Comics", "Fantasy/Science fiction", "Drawing", "Heavy metal"];
+function question7(){
+
+guessed = 6;
+attempts = 0;
+
+const topTen = ["final fantasy 7", "final fantasy 14", "the witcher 3", "horizen: zero dawn and forbbiden west", "pretty much anything wizards of the coast related", "pretty much anything world of darkness related", "comics", "fantasy/Science fiction", "drawing", "heavy metal"];
+
+while (guessed > 0){
+    answer7=prompt ("Name anything in my top ten. You have " + guessed + " guesses remaining.").toLowerCase();
+    attempts++;
+    guessed--;
+    if (topTen.includes(answer7)){
+        alert(" Winner winner chicken dinner!!");
+        points+=guessed;
+        guessed = -1;
+}else{
+    alert("Nope, try again.");
+}
+}
+if(guessed===0){
+    alert("Sorry"+ user+" you're out of trys. Possible answers were " + topTen +".");
+}else{
+    alert("Possible answers were " + topTen +".");
+    alert("You gained 1 point for every attepmt remaining.");
+}
+alert("Your score was "+ points +".");
+}
+question7();

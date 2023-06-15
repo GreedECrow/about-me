@@ -23,12 +23,10 @@ h2{
 
 section{
     border: 20px ridge gray;
-    border-radius: 12px;
     padding: 20px;
-    margin: 5rem auto 0 auto;
+    margin: 1rem auto 0 auto;
     background-color: black;
-    width: 80%;
-    height: 40rem;
+    width: 95%;
     position: static;
 }
 
