@@ -10,8 +10,7 @@
 h1{
     border: 20px groove grey;
     padding: 10px;
-    margin: 
-    background-color: black;
+    margin: ;
     font-size: 2rem;
     
 }
@@ -23,11 +22,13 @@ h2{
 
 section{
     border: 20px ridge gray;
+    border-width: auto;
     padding: 20px;
     margin: 1rem auto 0 auto;
     background-color: black;
     width: 95%;
-    position: static;
+
+    
 }
 
 p{
