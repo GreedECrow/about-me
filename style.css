@@ -3,46 +3,54 @@
     color: white;
     box-sizing: border-box;
     display: 95%;
+    width: max-content;
     
     
 }
 
 h1{
-    border: 20px groove grey;
+    border: 20px inset grey;
     padding: 10px;
-    margin: ;
+    display: 95%;
     font-size: 2rem;
+    margin: auto 2px auto 20px;
+    width: max-content;
     
 }
 
 h2{
-    background-color: black;
-    font-weight: bold;
+    width: max-content;
+    padding: 5px;
+    margin: auto 2px auto 20px;
 }
 
 section{
-    border: 20px ridge gray;
-    border-width: auto;
-    padding: 20px;
-    margin: 1rem auto 0 auto;
-    background-color: black;
-    width: 95%;
+    
+    width: max-content;
+    border: 20px inset  gray;
+    padding: 5px;
+    margin: 20px 20px auto 20px;
 
     
 }
 
 p{
-    background-color: black;
-    width: auto;
+    width: max-content;
+    padding: 5px;
+    margin: auto 2px auto 20px;
 }
 
 
 
 ul{
-    background-color: black
+    width: max-content; 
+    padding: 5px;
+    margin: auto 2px auto 20px;
 }
 
 li{
-    background-color: black
+    width: max-content;
+    padding: 5px;
+    margin: auto 2px auto 20px;
 }
 
